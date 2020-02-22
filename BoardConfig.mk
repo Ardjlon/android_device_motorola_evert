@@ -51,3 +51,6 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 # inherit from the proprietary version
 -include vendor/motorola/evert/BoardConfigVendor.mk
+
+# Prebuilt TWRP
+-include device/motorola/evert/twrp/twrp.mk
