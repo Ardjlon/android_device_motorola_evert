@@ -58,5 +58,8 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
+
 # inherit from the proprietary version
 include vendor/motorola/evert/BoardConfigVendor.mk
