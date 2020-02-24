@@ -1,0 +1,2 @@
+# Homebutton
+type sysfs_homebutton, fs_type, sysfs_type, mlstrustedobject;

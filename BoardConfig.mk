@@ -51,8 +51,12 @@ BOARD_VENDORIMAGE_PARTITION_SIZE := 956301312
 # Power
 TARGET_HAS_NO_WLAN_STATS := true
 
+
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
+
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
 
 # inherit from the proprietary version
 include vendor/motorola/evert/BoardConfigVendor.mk
