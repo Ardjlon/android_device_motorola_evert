@@ -32,4 +32,7 @@
         <item>com.moto.actions.KeyHandler</item>
     </string-array>
 
+    <!-- Whether device supports gestures on fingerprint sensor -->
+    <bool name="config_supportsGesturesOnFingerprintSensor">true</bool>
+
 </resources>
