@@ -12,6 +12,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.audio.calfile5=/vendor/etc/acdbdata/idn/Headset_cal.acdb \
     persist.vendor.audio.calfile6=/vendor/etc/acdbdata/idn/Handset_cal.acdb
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.audio.fluence.speaker=true \
+    persist.vendor.audio.fluence.voicecall=true
+
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.camera.expose.aux=1 \
