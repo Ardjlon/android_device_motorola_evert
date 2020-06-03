@@ -72,4 +72,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME=evert \
     PRIVATE_BUILD_DESC="evert-user 8.0.0 OPW27.113-89 116 release-keys"
 
-BUILD_FINGERPRINT := motorola/evert/evert:8.0.0/OPW27.113-89/116:user/release-keys
+BUILD_FINGERPRINT := motorola/evert/evert:8.0.0/OPW27.113-45/53:user/release-keys
