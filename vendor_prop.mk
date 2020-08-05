@@ -21,6 +21,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.fm.use_audio_session=true
 
+# HW Overlay
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.sf.disable_hwc=1
+
 # NFC
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.nfc_nci=pn54x
