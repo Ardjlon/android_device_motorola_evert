@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_evert.mk
+    $(LOCAL_DIR)/rr_evert.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_evert-eng \
-    lineage_evert-user \
-    lineage_evert-userdebug
+    rr_evert-eng \
+    rr_evert-user \
+    rr_evert-userdebug
