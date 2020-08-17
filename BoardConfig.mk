@@ -33,7 +33,7 @@ BOARD_HAS_QCA_FM_SOC := "cherokee"
 TARGET_KERNEL_CONFIG := avk_evert_defconfig
 
 # HIDL
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/touch.xml
+#DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/touch.xml
 
 # NFC
 BOARD_NFC_CHIPSET := pn553
