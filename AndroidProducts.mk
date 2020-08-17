@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/rr_evert.mk
+    $(LOCAL_DIR)/aosp_evert.mk
 
 COMMON_LUNCH_CHOICES := \
-    rr_evert-eng \
-    rr_evert-user \
-    rr_evert-userdebug
+    aosp_evert-eng \
+    aosp_evert-user \
+    aosp_evert-userdebug
