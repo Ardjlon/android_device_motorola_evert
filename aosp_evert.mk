@@ -60,6 +60,16 @@ PRODUCT_PACKAGES += \
 # Recovery
 TARGET_RECOVERY_FSTAB := device/motorola/sdm660-common/rootdir/etc/fstab.qcom
 
+# Evolution stuff
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_GAPPS_ARCH := arm64
+#TARGET_INCLUDE_WIFI_EXT := true
+#TARGET_INCLUDE_STOCK_ARCORE := true
+CUSTOM_BUILD_TYPE := OFFICIAL
+EVO_DONATE_URL := https://paypal.me/Ardjlon
+EVO_MAINTAINER := Ardjlon
+EVO_SUPPORT_URL := https://t.me/evertlatino
+
 # Device identifiers
 PRODUCT_DEVICE := evert
 PRODUCT_NAME := aosp_evert
