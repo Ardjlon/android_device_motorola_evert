@@ -96,7 +96,7 @@ public class FPGestureSettingsFragment extends PreferenceFragment {
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
-        addPreferencesFromResource(R.xml.fp_gesture_panel);
+        addPreferencesFromResource(R.xml.fp_gesture_settings);
         mFPScreenOffGesture = (SwitchPreference) findPreference(FP_HOME_KEY_OFF);
         mFPScreenOffCategory = (PreferenceCategory) findPreference("fp_keys_scr_off");
         mFPScreenOnCategory = (PreferenceCategory) findPreference("fp_keys_scr_on");

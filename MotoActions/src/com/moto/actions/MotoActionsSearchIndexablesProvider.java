@@ -45,21 +45,21 @@ public class MotoActionsSearchIndexablesProvider extends SearchIndexablesProvide
     public Cursor queryXmlResources(String[] projection) {
         MatrixCursor cursor = new MatrixCursor(INDEXABLES_XML_RES_COLUMNS);
 
-        cursor.addRow(generateResourceRef(new SearchIndexableResource(1, R.xml.actions_panel,
+        cursor.addRow(generateResourceRef(new SearchIndexableResource(1, R.xml.gesture_settings,
                     GestureSettingsActivity.class.getName(),
                     R.drawable.ic_settings_gestures)));
 
-        cursor.addRow(generateResourceRef(new SearchIndexableResource(1, R.xml.fp_gesture_panel,
+        cursor.addRow(generateResourceRef(new SearchIndexableResource(1, R.xml.fp_gesture_settings,
                     FPGestureSettingsActivity.class.getName(),
                     R.drawable.ic_settings_fingerprint)));
-        cursor.addRow(generateResourceRef(new SearchIndexableResource(1, R.xml.fp_gesture_panel_indexable,
+        cursor.addRow(generateResourceRef(new SearchIndexableResource(1, R.xml.fp_gesture_settings_indexable,
                     FPGestureSettingsActivity.class.getName(),
                     R.drawable.ic_settings_fingerprint)));
 
-        cursor.addRow(generateResourceRef(new SearchIndexableResource(1, R.xml.doze_panel,
+        cursor.addRow(generateResourceRef(new SearchIndexableResource(1, R.xml.doze_settings,
                     DozeSettingsActivity.class.getName(),
                     R.drawable.ic_settings_doze)));
-        cursor.addRow(generateResourceRef(new SearchIndexableResource(1, R.xml.doze_panel_indexable,
+        cursor.addRow(generateResourceRef(new SearchIndexableResource(1, R.xml.doze_settings_indexable,
                     DozeSettingsActivity.class.getName(),
                     R.drawable.ic_settings_doze)));
 

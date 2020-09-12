@@ -23,7 +23,7 @@ public class GestureSettingsFragment extends PreferenceFragment {
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
-        addPreferencesFromResource(R.xml.actions_panel);
+        addPreferencesFromResource(R.xml.gesture_settings);
     }
 
 }
