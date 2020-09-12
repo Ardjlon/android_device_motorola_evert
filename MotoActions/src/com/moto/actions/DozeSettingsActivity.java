@@ -18,17 +18,16 @@ package com.moto.actions;
 
 import android.os.Bundle;
 import android.preference.PreferenceActivity;
+import androidx.preference.PreferenceCategory;
+import androidx.preference.PreferenceFragment;
+import android.view.MenuItem;
 
 public class DozeSettingsActivity extends PreferenceActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getActionBar() != null) {
-            getActionBar().setDisplayHomeAsUpEnabled(true);
-            getActionBar().setTitle(R.string.ambient_display_title);
-        }
-
+        getActionBar().setDisplayHomeAsUpEnabled(true);
         getFragmentManager().beginTransaction()
                 .replace(android.R.id.content, new DozeSettingsFragment()).commit();
     }
