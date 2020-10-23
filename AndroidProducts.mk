@@ -15,9 +15,13 @@
 #
 
 PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/evolution_evert.mk \
     $(LOCAL_DIR)/derp_evert.mk
 
 COMMON_LUNCH_CHOICES := \
+    evolution_evert-user \
+    evolution_evert-userdebug \
+    evolution_evert-eng \
     derp_evert-eng \
     derp_evert-user \
     derp_evert-userdebug
