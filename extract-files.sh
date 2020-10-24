@@ -15,6 +15,22 @@
 # limitations under the License.
 #
 
+function blob_fixup() {
+    case "${1}" in
+
+        # Load ZAF configs from vendor
+        vendor/lib/libzaf_core.so)
+            sed -i "s|/system/etc/zaf|/vendor/etc/zaf|g" "${2}"
+            ;;
+
+        # Add uhid group for fingerprint service
+        vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc)
+            sed -i "s/input/uhid input/" "${2}"
+            ;;
+
+    esac
+}
+
 # If we're being sourced by the common script that we called,
 # stop right here. No need to go down the rabbit hole.
 if [ "${BASH_SOURCE[0]}" != "${0}" ]; then
@@ -22,7 +38,6 @@ if [ "${BASH_SOURCE[0]}" != "${0}" ]; then
 fi
 
 set -e
-AOSP_ROOT="$MY_DIR"/../../..
 
 # Required!
 export DEVICE=evert
@@ -32,13 +47,3 @@ export VENDOR=motorola
 export DEVICE_BRINGUP_YEAR=2018
 
 "./../../${VENDOR}/${DEVICE_COMMON}/extract-files.sh" "$@"
-
-BLOB_ROOT="$AOSP_ROOT"/vendor/"$VENDOR"/"$DEVICE"/proprietary
-
-# Load ZAF configs from vendor
-ZAF_CORE="$BLOB_ROOT"/vendor/lib/libzaf_core.so
-sed -i "s|/system/etc/zaf|/vendor/etc/zaf|g" "$ZAF_CORE"
-
-# Add uhid group for fingerprint service
-FP_SERVICE_RC="$BLOB_ROOT"/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
-sed -i "s/input/uhid input/" "$FP_SERVICE_RC"
