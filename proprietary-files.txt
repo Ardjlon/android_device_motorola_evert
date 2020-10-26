@@ -444,3 +444,6 @@ vendor/firmware/marley-dsp1-ultrasound.wmfw
 vendor/firmware/marley-dsp2-aov-frontend.wmfw
 vendor/firmware/marley-dsp2-aov-vrgain.bin
 vendor/firmware/marley-dsp3-aov-control.wmfw
+
+# Offline charging
+vendor/bin/charge_only_mode
