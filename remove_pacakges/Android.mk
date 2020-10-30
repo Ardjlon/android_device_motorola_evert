@@ -4,7 +4,7 @@ include $(CLEAR_VARS)
 LOCAL_MODULE := RemovePackages
 LOCAL_MODULE_CLASS := APPS
 LOCAL_MODULE_TAGS := optional
-LOCAL_OVERRIDES_PACKAGES := Gallery2 Jelly Email PhotoTable Photos Chrome Velvet
+LOCAL_OVERRIDES_PACKAGES := Gallery2 Jelly Email PhotoTable Photos Chrome Velvet Camera2 Maps
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null
