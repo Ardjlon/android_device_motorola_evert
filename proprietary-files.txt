@@ -439,6 +439,16 @@ vendor/lib64/libkeymasterutils.so
 # NFC
 vendor/lib64/libpn553_fw.so
 
+# Opalum
+etc/firmware/opalum.rx.ext.config.0:vendor/firmware/opalum.rx.ext.config.0
+etc/firmware/opalum.rx.ext.config.1:vendor/firmware/opalum.rx.ext.config.1
+etc/firmware/opalum.rx.ext.config.2:vendor/firmware/opalum.rx.ext.config.2
+etc/firmware/opalum.rx.ext.config.3:vendor/firmware/opalum.rx.ext.config.3
+etc/firmware/opalum.tx.ext.config.0:vendor/firmware/opalum.tx.ext.config.0
+etc/firmware/opalum.tx.ext.config.1:vendor/firmware/opalum.tx.ext.config.1
+etc/firmware/opalum.tx.ext.config.2:vendor/firmware/opalum.tx.ext.config.2
+etc/firmware/opalum.tx.ext.config.3:vendor/firmware/opalum.tx.ext.config.3
+
 # Sound Card - Marley
 vendor/firmware/marley-dsp1-ultrasound.wmfw
 vendor/firmware/marley-dsp2-aov-frontend.wmfw
