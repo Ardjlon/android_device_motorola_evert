@@ -24,7 +24,6 @@
         <item>@string/action_last_app</item>
         <item>@string/action_volume_up</item>
         <item>@string/action_volume_down</item>
-        <item>@string/action_voice_assistant</item>
         <item>@string/action_play_pause</item>
         <item>@string/action_previous_track</item>
         <item>@string/action_next_track</item>
@@ -41,7 +40,6 @@
         <item>121</item> <!-- last app -->
         <item>104</item> <!-- volume up -->
         <item>105</item> <!-- volume down -->
-        <item>106</item> <!-- voice assistant -->
         <item>107</item> <!-- play/pause -->
         <item>108</item> <!-- previous track -->
         <item>109</item> <!-- next track -->
