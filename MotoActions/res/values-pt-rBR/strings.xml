@@ -57,7 +57,6 @@
     <string name="action_last_app">Último app</string>
     <string name="action_volume_up">Aumentar volume</string>
     <string name="action_volume_down">Diminuir volume</string>
-    <string name="action_voice_assistant">Assistente de voz</string>
     <string name="action_play_pause">Tocar/pausar</string>
     <string name="action_previous_track">Faixa anterior</string>
     <string name="action_next_track">Próxima faixa</string>

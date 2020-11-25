@@ -537,11 +537,11 @@ public class KeyHandler implements DeviceKeyHandler {
             case ACTION_VOLUME_DOWN:
                 triggerVirtualKeypress(mHandler, KeyEvent.KEYCODE_VOLUME_DOWN);
                 break;
-            case ACTION_VOICE_ASSISTANT:
-                if (!mKeyguardManager.inKeyguardRestrictedInputMode()) {
-                    fireGoogleNowOnTap();
-                }
-                return;
+            // case ACTION_VOICE_ASSISTANT:
+            //     if (!mKeyguardManager.inKeyguardRestrictedInputMode()) {
+            //         fireGoogleNowOnTap();
+            //     }
+            //     return;
             case ACTION_PLAY_PAUSE:
                 dispatchMediaKeyWithWakeLock(KeyEvent.KEYCODE_MEDIA_PLAY_PAUSE, mContext);
                 break;
@@ -609,16 +609,16 @@ public class KeyHandler implements DeviceKeyHandler {
         }, 20);
     }
 
-    private void fireGoogleNowOnTap() {
-        doHapticFeedbackFP(true);
-        mSearchManagerService = ISearchManager.Stub.asInterface(ServiceManager.getService(Context.SEARCH_SERVICE));
-        if (mSearchManagerService != null) {
-            try {
-                mSearchManagerService.launchAssist(new Bundle());
-            } catch (RemoteException e) {
-            }
-        }
-    }
+    // private void fireGoogleNowOnTap() {
+    //     doHapticFeedbackFP(true);
+    //     mSearchManagerService = ISearchManager.Stub.asInterface(ServiceManager.getService(Context.SEARCH_SERVICE));
+    //     if (mSearchManagerService != null) {
+    //         try {
+    //             mSearchManagerService.launchAssist(new Bundle());
+    //         } catch (RemoteException e) {
+    //         }
+    //     }
+    // }
 
     private int str2int(String str) {
         if (str == null || str.isEmpty()) {
