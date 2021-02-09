@@ -452,7 +452,7 @@ vendor/lib64/vendor.dolby.hardware.dms@1.0-impl.so|8e147d44ed80c303add412787c475
 vendor/lib64/vendor.dolby.hardware.dms@1.0.so|2660a8f57f7131d08edfea4e1d4ad75a7de97b5b
 
 # IMS
--product/priv-app/ims/ims.apk|75854565f032706bd2c91bef682f1ab71a1db870
+-product/priv-app/ims/ims.apk|54c9f8f49d567082f7d23cee40a54515162dbf90
 
 # Keymaster
 vendor/bin/hw/android.hardware.keymaster@3.0-service-qti
