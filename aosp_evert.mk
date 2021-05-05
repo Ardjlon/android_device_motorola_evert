@@ -27,6 +27,7 @@ $(call inherit-product, device/motorola/evert/device.mk)
 
 # Bootanimation
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
 # GApps
 TARGET_GAPPS_ARCH := arm64
