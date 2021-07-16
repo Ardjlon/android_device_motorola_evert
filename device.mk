@@ -87,6 +87,10 @@ PRODUCT_COPY_FILES += \
 #PRODUCT_PACKAGES += \
     MotoPocketMode
 
+# Remove unwanted packages
+PRODUCT_PACKAGES += \
+    RemovePkgs    
+
 # Sensors
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sensors/sensor_def_qcomdev.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sensor_def_qcomdev.conf \
