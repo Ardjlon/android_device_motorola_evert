@@ -22,7 +22,6 @@ $(call inherit-product, vendor/motorola/evert/evert-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
-PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-pe
 
 # AAPT
