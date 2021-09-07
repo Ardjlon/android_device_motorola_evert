@@ -25,7 +25,10 @@ LOCAL_OVERRIDES_PACKAGES := \
 	Drive \
 	SafetyHubPrebuilt \
 	WallpaperPicker2 \
-	MusicFX
+	MusicFX \
+        CalendarGooglePrebuilt \
+        FilesPrebuilt \
+        PixelLiveWallpaperPrebuilt
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := PRESIGNED
 LOCAL_SRC_FILES := /dev/null

@@ -57,6 +57,8 @@ ENABLE_VENDOR_RIL_SERVICE := true
 
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
+# Split build properties
+BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
 # inherit from the proprietary version
 include vendor/motorola/evert/BoardConfigVendor.mk
