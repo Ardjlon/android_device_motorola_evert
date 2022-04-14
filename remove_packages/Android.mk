@@ -32,6 +32,7 @@ LOCAL_OVERRIDES_PACKAGES := \
         Music \
         MusicFX \
         MyVerizonServices \
+	NexusLauncherRelease \
         OBDM_Permissions \
         Ornament \
         Papers \
